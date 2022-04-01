@@ -6,109 +6,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<header>
-    <img src="./img/logo.png" alt="logo">
-    <img src="./img/loup.svg" alt="loup">
-    <ul>
-        <li>
-            <button>
-                <img src="./img/burger.svg" alt="burger">
+<header class="header">
+    <div class="container header__wrp">
+        <div class="header__container">
+            <img class="header__logo" src="./img/logo.png" alt="logo">
+            <img class="header__search-icon" src="./img/loup.svg" alt="loup">
+        </div>
+        <ul class="header__menu-list">
+            <li>
+                <button class="header__burger">
+                <img class="header__burger-icon" src="./img/burger.svg" alt="burger">
             </button>
-        </li>
-        <li>
-            <a href="#">
-                <img src="./img/person.svg" alt="person">
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="./img/basket.svg" alt="">
-            </a>
-        </li>
-    </ul>
-    <nav>
-        <h2>menu</h2>
-        <ul>
-            <li>
-                <h3>Man</h3>
-                <ul>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Bags</a></li>
-                    <li><a href="#">Denim</a></li>
-                    <li><a href="#">T-Shirts</a></li>
-                </ul>
             </li>
             <li>
-                <h3>Woman</h3>
-                <ul>
-                    <li>
-                        <a href="#">Accessories</a>
-                    </li>
-                    <li>
-                        <a href="#">Jackets & Coats</a>
-                    </li>
-                    <li>
-                        <a href="#">Polos</a>
-                    </li>
-                    <li>
-                        <a href="#">T-Shirts</a>
-                    </li>
-                    <li>
-                        <a href="#">Shirts</a>
-                    </li>
-                </ul>
+                <a class="header__link" href="#">
+                    <img class="header__person-icon" src="./img/person.svg" alt="person">
+                </a>
             </li>
             <li>
-                <h3>Kids</h3>
-                <ul>
-                    <li>
-                        <a href="#">Accessories</a>
-                    </li>
-                    <li>
-                        <a href="#">Jackets & Coats</a>
-                    </li>
-                    <li>
-                        <a href="#">Polos</a>
-                    </li>
-                    <li>
-                        <a href="#">T-Shirts</a>
-                    </li>
-                    <li>
-                        <a href="#">Shirts</a>
-                    </li>
-                    <li>
-                        <a href="#">Bags</a>
-                    </li>
-                </ul>
+                <a class="header__link" href="#">
+                    <img class="header__basket-icon" src="./img/basket.svg" alt="">
+                </a>
             </li>
         </ul>
-    </nav>
+        <nav class="header__nav">
+            <h2 class="header__nav-title">menu</h2>
+            <ul class="header__nav-list">
+                <li class="header__nav-item nav-item">
+                    <h3 class="nav-item__title">Man</h3>
+                    <ul class="nav-item__list">
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Woman</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="#">Jackets & Coats</a>
+                        </li>
+                        <li>
+                            <a href="#">Polos</a>
+                        </li>
+                        <li>
+                            <a href="#">T-Shirts</a>
+                        </li>
+                        <li>
+                            <a href="#">Shirts</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Kids</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="#">Jackets & Coats</a>
+                        </li>
+                        <li>
+                            <a href="#">Polos</a>
+                        </li>
+                        <li>
+                            <a href="#">T-Shirts</a>
+                        </li>
+                        <li>
+                            <a href="#">Shirts</a>
+                        </li>
+                        <li>
+                            <a href="#">Bags</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main>
-    <section>
-        <img src="./img/man.jpg" alt="main">
-        <h1>the brand of luxerious fashion</h1>
+    <section class="promo">
+        <img class="promo__img" src="./img/man.png" alt="main">
+        <div class="promo__title-wrp">
+            <h1 class="promo__title">the brand <span class="promo__title-under">of luxerious <span class="promo__title-pink">fashion</span></span>
+            </h1>
+        </div>
     </section>
-    <section>
-        <ul>
-            <li>
-                <p>30% off</p>
-                <h3>for women</h3>
-            </li>
-            <li>
-                <p>hot deal</p>
-                <h3>for men</h3>
-            </li>
-            <li>
-                <p>new arrivals</p>
-                <h3>for kids</h3>
-            </li>
-            <li>
-                <p>luxirous & trendy</p>
-                <h3>accesories</h3>
-            </li>
-        </ul>
+    <section class="sales">
+        <div class="container">
+            <h2 class="visually-hidden">sales</h2>
+            <ul class="sales__list">
+                <li class="sales__item sales__item--women">
+                    <p class="sales__discount">30% off</p>
+                    <h3 class="sales__title">for women</h3>
+                </li>
+                <li class="sales__item sales__item--men">
+                    <p class="sales__discount">hot deal</p>
+                    <h3 class="sales__title">for men</h3>
+                </li>
+                <li class="sales__item sales__item--kids">
+                    <p class="sales__discount">new arrivals</p>
+                    <h3 class="sales__title">for kids</h3>
+                </li>
+                <li class="sales__item sales__item--shoes">
+                    <p class="sales__discount">luxirous & trendy</p>
+                    <h3 class="sales__title">accesories</h3>
+                </li>
+            </ul>
+        </div>
     </section>
     <section>
         <h2>Fetured Items</h2>
