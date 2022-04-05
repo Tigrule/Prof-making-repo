@@ -3,3 +3,9 @@
     src: url('../fonts/lato/Lato-Regular.woff') format('woff'), url('../fonts/lato/Lato-Regular.ttf') format('truetype');
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Lato-light';
+    src: url('../fonts/lato/Lato-light.woff') format('woff'), url('../fonts/lato/Lato-Light.ttf') format('truetype');
+    font-style: normal;
+}
