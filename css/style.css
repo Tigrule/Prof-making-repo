@@ -379,10 +379,25 @@ body {
     align-items: center;
 }
 
+
 .copyright {
     font-size: 16px;
     line-height: 19px;
     color: #FBFBFB;
+}
+
+.pinterest:hover .pinterest__letter,
+.twitter:hover .twitter__bird,
+.instagram:hover .instagram__camera,
+.facebook:hover .facebook__letter {
+    fill: white;
+}
+
+.pinterest:hover .pinterest__bg,
+.twitter:hover .twitter__bg,
+.instagram:hover .instagram__bg,
+.facebook:hover .facebook__bg {
+    fill: var(--pink-color);
 }
 
 .d-none {
