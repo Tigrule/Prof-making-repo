@@ -1,0 +1,17 @@
+:root {
+    --black-bkg: #222222;
+    --black-text: #000;
+    --dark-gray-color: #5D5D5D;
+    --goods-bkg: #F8F8F8;
+    --gray-subtitle: #9F9F9F;
+    --pink-bkg: #F1E4E6;
+    --pink-button-border: #FF6A6A;
+    --pink-button: #F26376;
+    --pink-color: #f16d7f;
+    --sales-bkg: #443e3e;
+    --white-color: #FFFFFF;
+    --white-adv: #FBFBFB;
+    --grey-nav: #6F6E6E;
+    --pink-reg-bg: #F8F3F4;
+    --grey-placeholder: #B1B1B1;
+}
