@@ -1,0 +1,107 @@
+.registration-heading {
+    background-color: var(--pink-reg-bg);
+    text-transform: uppercase;
+}
+
+.registration-heading__head {
+    padding: 60px 0;
+    color: var(--pink-color);
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.registration {
+    display: flex;
+    font-family: 'Lato-light';
+    font-weight: 300;
+    padding: 64px 0 96px 0;
+}
+
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    min-width: 360px;
+}
+
+.registration__part-head {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.registration__field {
+    padding: 13px 0 16px 17px;
+    margin-top: 20px;
+}
+
+.registration__field::placeholder {
+    color: var(--grey-placeholder);
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.registration__gender {
+    padding: 31px 0 33px 0;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.registration__gender label {
+    margin: auto 20px auto 10px;
+}
+
+.registration__gender input[type="radio"] {
+    padding: 0;
+    margin: 0;
+    width: 17px;
+    height: 17px;
+}
+
+.registration__subtext {
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--grey-placeholder);
+    margin: 15px 0 39px 0;
+}
+
+.registration__submit {
+    padding: 16px 29px;
+    background: var(--pink-color);
+    color: var(--white-color);
+    /* box-shadow: none; */
+    border: none;
+}
+
+.registration__arrow {
+    margin-left: 20px;
+}
+
+.loyalty {
+    margin-left: 128px;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.loyalty__head {
+    margin-bottom: 22px;
+}
+
+.loyalty__list {
+    margin-top: 21px;
+}
+
+.loyalty__list-item {
+    position: relative;
+    padding: 0 0 16px 42px;
+}
+
+.loyalty__list-item::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 16px;
+    left: 0;
+    top: 4px;
+    background: url(../img/mark.svg);
+}

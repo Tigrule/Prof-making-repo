@@ -1,20 +1,7 @@
 @import url(reset.css);
 @import url(fonts.css);
-:root {
-    --black-bkg: #222222;
-    --black-text: #000;
-    --dark-gray-color: #5D5D5D;
-    --goods-bkg: #F8F8F8;
-    --gray-subtitle: #9F9F9F;
-    --pink-bkg: #F1E4E6;
-    --pink-button-border: #FF6A6A;
-    --pink-button: #F26376;
-    --pink-color: #f16d7f;
-    --sales-bkg: #443e3e;
-    --white-color: #FFFFFF;
-    --white-adv: #FBFBFB;
-}
-
+@import url(registration.css);
+@import url(colors.css);
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -34,6 +21,7 @@ body {
     font-size: 14px;
     line-height: 17px;
     font-weight: 400px;
+    color: var(--black-bkg);
 }
 
 .container {
@@ -56,12 +44,52 @@ body {
     margin: 0 41px 0 0;
 }
 
+.header__container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.header__form {
+    margin-left: 30px;
+}
+
 .header__link {
     margin: 0 0 0 33px;
 }
 
 .header__nav {
-    display: none;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    width: 232px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 37px 0 135px 33px;
+}
+
+.header__nav-title {
+    font-family: 'Lato-bold', sans-serif;
+    font-weight: 700;
+    padding-bottom: 24px;
+    text-transform: uppercase;
+    font-family: '';
+}
+
+.nav-item__title {
+    text-transform: uppercase;
+    color: var(--pink-color);
+}
+
+.nav-item__list {
+    padding: 12px 22px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.nav-item__list a {
+    text-decoration: none;
+    color: var(--grey-nav);
 }
 
 .header__menu-list {
@@ -72,6 +100,21 @@ body {
 .header__burger {
     border: none;
     background-color: transparent;
+    fill: #E8E8E8;
+    cursor: pointer;
+}
+
+.header__basket-icon,
+.header__person-icon {
+    fill: #E8E8E8;
+}
+
+.redfill,
+.header__person-icon:hover,
+.header__basket-icon:hover,
+#burger:hover,
+.header__search-icon:hover {
+    fill: red;
 }
 
 .promo {
@@ -93,6 +136,7 @@ body {
 }
 
 .promo__title {
+    font-family: 'Lato-bold', sans-serif;
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
@@ -298,7 +342,7 @@ body {
     margin: 65px auto 32px;
 }
 
-.contact-form__title_small {
+.contact-form__title-small {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -320,4 +364,28 @@ body {
 .footer-line__list {
     display: flex;
     align-items: center;
+}
+
+.copyright {
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.pinterest:hover .pinterest__letter,
+.twitter:hover .twitter__bird,
+.instagram:hover .instagram__camera,
+.facebook:hover .facebook__letter {
+    fill: white;
+}
+
+.pinterest:hover .pinterest__bg,
+.twitter:hover .twitter__bg,
+.instagram:hover .instagram__bg,
+.facebook:hover .facebook__bg {
+    fill: var(--pink-color);
+}
+
+.d-none {
+    display: none;
 }
