@@ -238,6 +238,53 @@ body {
     background: var(--goods-bkg);
 }
 
+.goods__item-img-wrp {
+    position: relative;
+}
+
+.goods__item-img::before {
+    position: absolute;
+    display: none;
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #211616B2;
+}
+
+.goods__button {
+    display: none;
+    align-items: center;
+    gap: 11px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    background-color: transparent;
+    color: var(--white-color);
+    padding: 14px;
+    font-weight: 400;
+    box-shadow: none;
+    border: 1px solid #FFFFFF
+}
+
+.goods__button img {
+    width: 26px;
+    top: 24px;
+}
+
+.goods__item-img-wrp:hover .goods__item-img:before {
+    display: block;
+}
+
+.goods__item-img-wrp:hover .goods__button {
+    display: flex;
+    cursor: pointer;
+}
+
 .goods__item-descrition {
     margin: 12px 0 18px;
     color: var(--dark-gray-color)
